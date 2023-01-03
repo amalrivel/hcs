@@ -1,0 +1,19 @@
+services:
+  app:
+    build: .
+    container_name: hcs
+    command: npm run dev
+    ports: 
+      - 3000:3000
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: password
+    ports:
+      - 3306:3306
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
