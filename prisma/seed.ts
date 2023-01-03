@@ -6,6 +6,8 @@ const userData: Prisma.UserCreateInput[] = [
   {
     name: "Alice",
     email: "alice@prisma.io",
+    card: "Gold",
+    family: "Nura",
     posts: {
       create: [
         {
@@ -19,6 +21,8 @@ const userData: Prisma.UserCreateInput[] = [
   {
     name: "Nilu",
     email: "nilu@prisma.io",
+    card: "Gold",
+    family: "Nuri",
     posts: {
       create: [
         {
@@ -32,6 +36,27 @@ const userData: Prisma.UserCreateInput[] = [
   {
     name: "Mahmoud",
     email: "mahmoud@prisma.io",
+    card: "Gold",
+    family: "Nuru",
+    posts: {
+      create: [
+        {
+          title: "Ask a question about Prisma on GitHub",
+          content: "https://www.github.com/prisma/prisma/discussions",
+          published: true,
+        },
+        {
+          title: "Prisma on YouTube",
+          content: "https://pris.ly/youtube",
+        },
+      ],
+    },
+  },
+  {
+    name: "Putri Zeta",
+    email: "putri.nofarrani",
+    card: "Gold",
+    family: "Nur",
     posts: {
       create: [
         {
