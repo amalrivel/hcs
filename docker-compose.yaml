@@ -2,9 +2,10 @@ services:
   app:
     build: .
     container_name: hcs
-    command: npm run dev
     ports: 
       - 3000:3000
+    volumes:
+      - .:/app
   db:
     image: mariadb
     restart: always
